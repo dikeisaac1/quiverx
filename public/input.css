@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html, body {
+  overscroll-behavior: none;
+}
+
 @layer utilities {
   /* .scrollbar::-webkit-scrollbar {
     width: 11px;
@@ -168,7 +172,7 @@
 
 }
 
-/* @keyframes appear {
+@keyframes appear {
     from{
         opacity: 0.5;
         scale: 0.7;
@@ -184,7 +188,7 @@
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-} */
+}
 
 .blue-underline {
     background: linear-gradient(to right, var(--color-blue-600), var(--dark-blue-2));
