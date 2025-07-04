@@ -11,7 +11,7 @@
     --dark-blue-1: #000211;
     --dark-blue-2: #00031a;
     --dark-blue-3: #1a2a4a;
-    --dark-blue-4: #010c22;
+    --dark-blue-4: #01102e;
 }
 
 @layer components {
@@ -124,16 +124,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.15),
         -4px -4px 6px -1px rgba(26, 42, 74, 0.7);
         border-radius: 50%;
     }
 
     .roundnimation-inner {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
         inset -4px -4px 6px -1px rgba(26, 42, 74, 0.7),
         -0.5px -0.5px 0px rgba(26, 42, 74, 1),

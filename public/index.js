@@ -19,7 +19,7 @@ function animateSkillCircles() {
     const $circle = $skill.find('.progress-circle');
 
     const target = parseInt($number.data('target'));
-    const radius = 35;
+    const radius = 24;
     const circumference = 2 * Math.PI * radius;
 
     $circle.css({
