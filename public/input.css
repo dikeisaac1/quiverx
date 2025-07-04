@@ -1,30 +1,5 @@
 @import "tailwindcss";
 
-html, body {
-  overscroll-behavior: none;
-}
-
-@layer utilities {
-  /* .scrollbar::-webkit-scrollbar {
-    width: 11px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: var(--dark-blue-4);
-    
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: var(--color-blue-900);
-    border-radius: 100vh;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: var(--color-blue-950);
-  } */
-}
-
 .name-auth, .email-auth, .message-auth, .email-alert {
     color: var(--color-blue-600);
     font-size: .7rem;
@@ -172,24 +147,6 @@ html, body {
 
 }
 
-@keyframes appear {
-    from{
-        opacity: 0.5;
-        scale: 0.7;
-    }
-
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-.scrollnimate {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
 .blue-underline {
     background: linear-gradient(to right, var(--color-blue-600), var(--dark-blue-2));
     width: 120px;
@@ -230,23 +187,6 @@ html, body {
   animation: slideInUp 1.3s ease forwards;
 }
 
-.material-symbols-outlined {
-    font-size: 2.5rem;
-    margin: 16px;
-    padding: 16px;
-    border-radius: 50%;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
-@media (max-width: 400px) {
-        .material-symbols-outlined {
-            font-size: 2rem;
-        }
-    }
 
 body {
     font-family: 'Manrope', sans-serif;
