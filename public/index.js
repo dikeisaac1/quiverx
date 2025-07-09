@@ -65,7 +65,7 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.querySelector('#skills'));
 
-const email = "dikeisaac2020@gmail.com";
+const email = "quivercreatives@gmail.com";
 
   $('#copy-email-btn').on('click', function() {
     navigator.clipboard.writeText(email).then(() => {
@@ -76,7 +76,7 @@ const email = "dikeisaac2020@gmail.com";
   });
 
 $('.get-in-touch-btn').on('click', function () {
-  const email = "dikeisaac2020@gmail.com";
+  const email = "quivercreatives@gmail.com";
   const subject = "Hello";
   const body = "I'd like to connect with you.";
 
@@ -134,7 +134,7 @@ $('#contact-form').on('submit', function (e) {
   if (!isValid) return;
 
   $.ajax({
-    url: "https://formsubmit.co/ajax/dikeisaac2020@gmail.com",
+    url: "https://formsubmit.co/ajax/quivercreatives@gmail.com",
     method: "POST",
     data: { name, email, message },
     dataType: "json",
