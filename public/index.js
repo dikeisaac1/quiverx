@@ -93,6 +93,13 @@ $('.get-in-touch-btn').on('click', function () {
   }
 });
 
+$(window).on('load', function () {
+    $('#preloader').fadeOut(500, function () {
+      $('#main-content').fadeIn(500);
+    });
+  });
+
+
 
 $('#contact-form').on('submit', function (e) {
   e.preventDefault();
