@@ -271,10 +271,6 @@
     width: calc(var(--spacing) * 3.5);
     height: calc(var(--spacing) * 3.5);
   }
-  .size-4 {
-    width: calc(var(--spacing) * 4);
-    height: calc(var(--spacing) * 4);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -373,9 +369,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-\[repeat\(auto-fit\,_minmax\(150px\,_1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .grid-cols-\[repeat\(auto-fit\,_minmax\(270px\,_1fr\)\)\] {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -750,6 +743,20 @@
       }
     }
   }
+  .hover\:opacity-70 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 70%;
+      }
+    }
+  }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .focus\:ring-0 {
     &:focus {
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
@@ -775,11 +782,6 @@
   .sm\:w-\[400px\] {
     @media (width >= 40rem) {
       width: 400px;
-    }
-  }
-  .sm\:grid-cols-3 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .sm\:grid-cols-4 {
@@ -922,11 +924,6 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-8 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -1015,11 +1012,6 @@
   .xl\:w-\[10rem\] {
     @media (width >= 80rem) {
       width: 10rem;
-    }
-  }
-  .xl\:grid-cols-8 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
     }
   }
   .xl\:gap-7 {
@@ -1237,9 +1229,6 @@ a {
   font-weight: 400;
   transition: color 0.3s ease;
   font-size: 14px;
-}
-a:hover {
-  opacity: 0.7;
 }
 button {
   cursor: pointer;

@@ -75,14 +75,24 @@ const email = "dikeisaac2020@gmail.com";
     });
   });
 
-$('.get-in-touch-btn').on('click', function() {
-      const email = "dikeisaac2020@gmail.com";
-      const subject = "Hello";
-      const body = "I'd like to connect with you.";
-      const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-      window.open(gmailURL, '_blank');
-    });
+$('.get-in-touch-btn').on('click', function () {
+  const email = "dikeisaac2020@gmail.com";
+  const subject = "Hello";
+  const body = "I'd like to connect with you.";
+
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailWebLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // Simple device check
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = mailtoLink;
+  } else {
+    window.open(gmailWebLink, '_blank');
+  }
+});
+
 
 $('#contact-form').on('submit', function (e) {
   e.preventDefault();
