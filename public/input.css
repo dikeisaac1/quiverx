@@ -1,3 +1,8 @@
+html, body {
+  min-height: 100%;
+}
+
+
 @import "tailwindcss";
 
 .name-auth, .email-auth, .message-auth, .email-alert {
@@ -177,7 +182,7 @@
 
 @keyframes rotateLogo {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(-180deg);
   }
   24%, 100% {
     transform: rotate(0deg);
@@ -222,7 +227,7 @@
 body {
     font-family: 'Manrope', sans-serif;
     overflow-x: hidden;
-    
+    background-color: #00031a;
 }
 
 a {
