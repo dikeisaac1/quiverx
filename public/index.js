@@ -1,89 +1,70 @@
+console.log("jQuery version:", $.fn.jquery);
+
 $(document).ready(function () {
   $(".filter-btn").on("click", function () {
     $(".filter-btn").removeClass("active bg-primary");
     $(this).addClass("active bg-primary");
 
-    var selected = $(this).data("filter");
+    const selected = $(this).data("filter");
     $(".portfolio-div").addClass("hide-card");
 
-    $('[data-category="' + selected + '"]')
+    $(`[data-category="${selected}"]`)
       .removeClass("hide-card")
       .addClass("slide-in-Up");
   });
 
-  function animateSkillCircles() {
-    $(".skill-grid").each(function () {
-      const $skill = $(this);
-      const $number = $skill.find(".number");
-      const $circle = $skill.find(".progress-circle");
+  function animateSkill($skill) {
+    const $number = $skill.find(".number");
+    const $bar = $skill.find(".progress");
+    const target = parseInt($number.data("target"));
 
-      const target = parseInt($number.data("target"));
-      const radius = 24;
-      const circumference = 2 * Math.PI * radius;
+    $number.html("0%");
+    $bar.css("width", "0%");
 
-      $circle.css({
-        "stroke-dasharray": circumference,
-        "stroke-dashoffset": circumference,
-      });
-
-      $number.html("0%");
-
-      let counter = 0;
-      const interval = setInterval(() => {
-        if (counter >= target) {
-          clearInterval(interval);
-        } else {
-          counter++;
-          $number.html(`${counter}%`);
-          const offset = circumference - (counter / 100) * circumference;
-          $circle.css("stroke-dashoffset", offset);
-        }
-      }, 20);
-    });
+    let counter = 0;
+    const interval = setInterval(() => {
+      if (counter >= target) {
+        clearInterval(interval);
+      } else {
+        counter++;
+        $number.html(`${counter}%`);
+        $bar.css("width", counter + "%");
+      }
+    }, 20);
   }
 
-  let lastTriggered = 0;
-  function animateSkillCirclesThrottled() {
-    const now = Date.now();
-    if (now - lastTriggered > 20000) {
-      lastTriggered = now;
-      animateSkillCircles();
-    }
-  }
-
-  const observer = new IntersectionObserver(
+  const barObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          animateSkillCirclesThrottled();
+          animateSkill($(entry.target));
+          barObserver.unobserve(entry.target);
         }
       });
     },
-    {
-      threshold: 0.5,
-    }
+    { threshold: 0.3 }
   );
 
-  observer.observe(document.querySelector("#skills"));
+  $(".skill-grid").each(function () {
+    barObserver.observe(this);
+  });
+
+  const wrapper = document.querySelector(".w-full.grid");
+  if (wrapper) {
+    barObserver.observe(wrapper);
+  }
 
   const email = "quivercreatives@gmail.com";
-
   $("#copy-email-btn").on("click", function () {
     navigator.clipboard
       .writeText(email)
-      .then(() => {
-        alert("Email copied to clipboard!");
-      })
-      .catch((err) => {
-        console.error("Failed to copy email: ", err);
-      });
+      .then(() => alert("Email copied to clipboard!"))
+      .catch((err) => console.error("Failed to copy email: ", err));
   });
 
   $(".get-in-touch-btn").on("click", function () {
-    const email = "quivercreatives@gmail.com";
     const subject = "Hello";
     const body = "I'd like to connect with you.";
-
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
@@ -92,60 +73,39 @@ $(document).ready(function () {
     )}&body=${encodeURIComponent(body)}`;
 
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      window.location.href = mailtoLink;
-    } else {
-      window.open(gmailWebLink, "_blank");
-    }
+    window.location.href = isMobile ? mailtoLink : gmailWebLink;
   });
 
-  $(window).on("load", function () {
-    $("#preloader").fadeOut(500, function () {
-      $("#main-content").fadeIn(500);
-    });
-  });
-
-  $("#contact-form").on("submit", function (e) {
+  $("#subscribe-form").on("submit", function (e) {
     e.preventDefault();
 
-    const name = $('input[name="name"]').val().trim();
-    const email = $('input[name="email"]').val().trim();
-    const message = $('textarea[name="message"]').val().trim();
+    const email = $("#subscriber-email").val().trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const errorMsg = $("#subscribe-error");
 
-    let isValid = true;
+    // Reset error
+    errorMsg.addClass("hidden").text("");
 
-    $(".name-auth, .email-auth, .message-auth").hide();
-
-    if (!name) {
-      $(".name-auth").show();
-      isValid = false;
-    }
-
+    // Custom validation
     if (!email) {
-      $(".email-auth").show().text("Email is required");
-      isValid = false;
+      errorMsg.removeClass("hidden").text("Email is required.");
+      return;
     } else if (!emailRegex.test(email)) {
-      $(".email-auth").show().text("Please enter a valid email.");
-      isValid = false;
+      errorMsg
+        .removeClass("hidden")
+        .text("Please enter a valid email address.");
+      return;
     }
 
-    if (!message) {
-      $(".message-auth").show();
-      isValid = false;
-    }
-
-    if (!isValid) return;
-
+    // If valid, send to FormSubmit
     $.ajax({
       url: "https://formsubmit.co/ajax/quivercreatives@gmail.com",
       method: "POST",
-      data: { name, email, message },
+      data: { email },
       dataType: "json",
       success: function () {
-        alert("✅ Message sent successfully!");
-        $("#contact-form")[0].reset();
+        alert("✅ Subscription successful!");
+        $("#subscribe-form")[0].reset();
       },
       error: function () {
         alert("❌ Something went wrong. Please try again.");

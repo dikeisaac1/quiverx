@@ -1,164 +1,180 @@
-html, body {
-  min-height: 100%;
-}
-
-
 @import "tailwindcss";
 
-.name-auth, .email-auth, .message-auth, .email-alert {
-    color: var(--color-blue-600);
-    font-size: .7rem;
-    margin-top: 5px;
-    display: none;
+.name-auth,
+.email-auth,
+.message-auth,
+.email-alert {
+  color: var(--color-blue-600);
+  font-size: 0.7rem;
+  margin-top: 5px;
+  display: none;
 }
 
 :root {
-    --dark-blue-1: #000211;
-    --dark-blue-2: #00031a;
-    --dark-blue-3: #1a2a4a;
-    --dark-blue-4: #01102e;
+  --dark-blue-1: #000211;
+  --dark-blue-2: #00031a;
+  --dark-blue-3: #1a2a4a;
+  --dark-blue-4: #01102e;
 }
 
 @layer components {
+  .font-round {
+    font-family: 'Quicksand', sans-serif;
+  }
 
-    .glow-button {
-        color: var(--color-blue-100);
-        background-color: var(--color-blue-600);
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        border-radius: .8rem;
-        font-weight: 500;
-        transition: background-color 200ms ease-in-out;
-    }
+  .glow-button {
+    color: var(--color-neutral-200);
+    background-color: var(--color-blue-700);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    font-weight: 400;
+    transition: background-color 200ms ease-in-out;
+  }
 
-    .filter-btn {
-        transition: all 0.3s ease;
-    }
-    .filter-btn:hover:not(.active) {
-        background-color: var(--dark-blue-3);
-    }
+  .filter-btn {
+    transition: all 0.3s ease;
+  }
+  .filter-btn:hover:not(.active) {
+    background-color: var(--color-gray-800);
+  }
 
-    .glow-button:hover {
-        background-color: var(--color-blue-800);
-    }
+  .glow-button:hover {
+    background-color: var(--color-blue-800);
+  }
 
-    .active {
-        background-color: var(--color-blue-600);
-        filter: drop-shadow(0 4px 3px rgba(37, 99, 235, 0.6));
-    }
+  .active {
+    background-color: var(--color-blue-700);
+  }
 
-    .portfolio-card {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            background-color: var(--dark-blue-4);
-        }
-    .portfolio-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
-        }
-    
-    .grid-services {
-        display: flex;
-        text-align: center;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-        padding:3rem 5rem;
-        padding-bottom: 51px;
-        filter: drop-shadow(0 5px 50px rgba(9, 0, 63, 0.4));
-        background-color: var(--dark-blue-4);
-        transition: all 0.3s ease-in-out;
-    }
+  .portfolio-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-gray-900);
+    transition: all 0.5s ease-in-out;
+  }
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--color-blue-900);
+  }
 
-    .grid-services:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
-    }
+  .grid-services {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2em;
+    padding: 5em;
+    background-color: var(--color-gray-900);
+    transition: all 0.5s ease-in-out;
+  }
 
-    .group-work {
-        margin: 10px;
-        transition: transform 0.3s ease;
-    }
+  .grid-services:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--color-blue-900);
+  }
 
-    .group-work:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-    }
+  .group-work {
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
 
-    .grid-work img {
-        filter: brightness(85%);
-    }
+  .group-work:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 
-    .grid-work img:hover {
-        opacity: 50%;
+  .grid-work img {
+    filter: brightness(85%);
+  }
+
+  .grid-work img:hover {
+    opacity: 50%;
+  }
+
+  .brands {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 5%,
+      black 95%,
+      transparent 100%
+    );
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
     }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .brands-inner {
+    width: max-content;
+    animation: marquee 5s linear infinite;
+    animation-play-state: running;
+  }
+
+  .skill-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--color-gray-900);
+    padding: 2em 0;
+    border-radius: 2rem;
+    gap: 2em;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .skill-grid p, .skill-grid img {
+    align-self: center;
+  }
+
+  .skill-grid .progress-bar p{
+    justify-self: center;
+    padding-top: 1em; 
+  }
 
 
-    .skill-grid {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: var(--dark-blue-4);
-        padding: 2rem 3rem;
-        border-radius: 20px;
-        gap: 1rem;
-        filter: drop-shadow(0 5px 50px rgba(9, 0, 63, 0.4));
-        transition: all 0.3s ease-in-out;
-    }
+  .skill-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--color-blue-900);
+  }
 
-    .skill-grid:hover {
-       transform: translateY(-5px);
-       box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
-    }
+  .h3-services {
+    color: var(--color-neutral-200);
+    font-weight: 400;
+  }
 
-    .h3-services {
-        color: var(--color-blue-100);
-        font-size: 2rem;
-        font-weight: 500;
-    }
-
-    .p-services {
-        text-align: center;
-        color: var(--color-blue-50);
-        opacity: 0.7;
-        max-width: fit-content;
-    }
-
-    .roundnimation-outer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.15),
-        -4px -4px 6px -1px rgba(26, 42, 74, 0.7);
-        border-radius: 50%;
-    }
-
-    .roundnimation-inner {
-        width: 40px;
-        height: 40px;
-        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-        inset -4px -4px 6px -1px rgba(26, 42, 74, 0.7),
-        -0.5px -0.5px 0px rgba(26, 42, 74, 1),
-        0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .p-services {
+    text-align: center;
+    color: var(--color-neutral-200);
+    max-width: fit-content;
+  }
 
 }
 
 .blue-underline {
-    background: linear-gradient(to right, var(--color-blue-600), var(--dark-blue-2));
-    width: 120px;
-    height: 2px;
-    margin-top: -40px;
+  background: linear-gradient(
+    to right,
+    var(--dark-blue-2),
+    var(--color-blue-600),
+    var(--dark-blue-2)
+  );
+  width: 120px;
+  height: 2px;
+  margin-top: -40px;
 }
-
 
 #preloader {
   position: fixed;
@@ -166,7 +182,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--dark-blue-2); 
+  background: var(--dark-blue-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,42 +196,44 @@ html, body {
   transform-origin: center;
 }
 
+.bar {
+  width: 30%;
+  height: 6px;
+  background: var(--color-gray-950);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: var(--color-blue-600);
+  border-radius: 50px;
+  transition: width 1.5s ease;
+}
+
 @keyframes rotateLogo {
   0% {
     transform: rotate(-180deg);
   }
-  24%, 100% {
+  24%,
+  100% {
     transform: rotate(0deg);
   }
 }
 
-
-.progress-circle {
-  fill: none;
-  stroke: var(--color-blue-600);
-  stroke-width: 10px;
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
-  transition: stroke-dashoffset 0.2s linear;
-}
-
-
-.skill-grid svg {
-    position: absolute;
-}
-
 .hide-card {
-    display: none;
+  display: none;
 }
 
 @keyframes slideInUp {
   0% {
-    transform: translatey(-50px);
-    opacity: 0;
+    transform: translatey(-20px);
   }
   100% {
     transform: translatey(0);
-    opacity: 1;
   }
 }
 
@@ -223,26 +241,11 @@ html, body {
   animation: slideInUp 1.3s ease forwards;
 }
 
-
 body {
-    font-family: 'Manrope', sans-serif;
-    overflow-x: hidden;
-    background-color: #00031a;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
-
-a {
-    color: var(--color-blue-100);
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    transition: color 0.3s ease;
-    font-size: 14px;
-}
-
 
 button {
-    cursor: pointer;
-}
-
-h1, h2, h3, p {
-    text-wrap: balance;
+  cursor: pointer;
 }

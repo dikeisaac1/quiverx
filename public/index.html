@@ -11,174 +11,218 @@
       href="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
       type="image/x-icon"
     />
-    <title>QuiverX-Elevating Brands Through Design</title>
+    <title>Elevating Brands Through Design</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./style.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
   </head>
-  <body
-    class="min-h-screen bg-gradient-to-l from-[var(--dark-blue-1)] to-[var(--dark-blue-2)]"
-  >
-    <div id="preloader">
-      <img
-        src="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
-        alt="Loading..."
-        class="logo"
-      />
-    </div>
-
-    <header
-      class="sticky top-0 py-5 w-full bg-transparent backdrop-blur-[15px] z-50"
-    >
-      <nav
-        class="max-w-[1640px] mx-auto px-5 flex items-center justify-between"
-      >
-        <div>
-          <a
-            href="https://quiverx.vercel.app/"
-            class="flex items-center gap-x-3 cursor-pointer"
-          >
-            <img
-              src="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
-              class="w-8 md:w-10 transition-transform duration-500 hover:rotate-360"
-            />
-            <span class="text-blue-100 text-[1rem] md:text-[1.3rem] font-bold"
-              >QuiverX</span
-            >
-          </a>
-        </div>
-        <div class="gap-x-5 flex lg:gap-x-10 items-center">
-          <div class="hidden md:flex gap-x-5 lg:gap-x-10">
-            <a href="#our-work" class="md:text-[.8rem] hover:opacity-70"
-              >Our Work</a
-            >
-            <a href="#about-us" class="md:text-[.8rem] hover:opacity-70"
-              >About Us</a
-            >
-            <a href="#services" class="md:text-[.8rem] hover:opacity-70"
-              >Services</a
-            >
-            <a href="#contact" class="md:text-[.8rem] hover:opacity-70"
-              >Contact</a
-            >
-          </div>
-          <button
-            class="get-in-touch-btn glow-button drop-shadow-lg drop-shadow-blue-600/80 px-4 py-2 text-[.8rem] lg:px-5 lg:py-2.5 lg:text-[1rem] lg:rounded-xl"
-          >
-            Get in touch
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <main class="min-h-screen">
+  <body class="bg-gray-950 overflow-x-hidden">
+    <header class="">
       <section
-        class="max-w-[1640px] m-auto px-5 flex flex-col-reverse items-center text-center lg:flex-row lg:text-left lg:justify-between"
+        class="justify-between min-h-dvh max-w-[1640px] mx-auto flex flex-col"
       >
-        <div
-          class="flex flex-col gap-y-10 mt-5 xl:gap-10 items-center lg:items-start"
-        >
-          <div class="flex flex-col items-center lg:items-start gap-5 xl:gap-7">
-            <h1
-              class="max-w-2xl text-[clamp(1.9rem,8vw,3rem)] sm:text-[3.5rem] md:text-[4rem] lg:text-[2.7rem] xl:text-[3.7rem] font-bold leading-[1.2] tracking-tight text-blue-100"
+        <nav class="bg-gray-950 z-50 flex items-center justify-between p-6">
+          <div>
+            <a
+              draggable="false"
+              href="https://quiverx.vercel.app/"
+              class="flex items-center gap-x-2 xl:gap-x-3 cursor-pointer"
             >
-              Transforming Ideas<br />Into Stunning
-              <span class="text-blue-700">Visual Experiences</span>
-            </h1>
-            <p
-              class="max-w-xl text-[clamp(.7rem,3vw,1rem)] sm:text-[.8rem] 2xl:text-[1rem] tracking-normal text-blue-100 opacity-80 font-light"
-            >
-              At our design agency, we specialize in intuitive UI/UX designs,
-              innovative product designs, reliable web development solutions,
-              and seamless digital experiences.
-            </p>
-          </div>
-          <div class="flex gap-x-3 items-center lg:items-start">
-            <button
-              class="get-in-touch-btn text-[.9rem] px-5 py-3 glow-button drop-shadow-lg drop-shadow-blue-600/80 md:px-8 md:py-4 md:text-[1rem]"
-            >
-              Get in touch
-            </button>
-            <button
-              id="copy-email-btn"
-              class="text-blue-100 text-[.9rem] px-5 py-3 bg-none bg-[var(--dark-blue-3)] hover:bg-[var(--dark-blue-4)] md:px-8 md:py-4 md:text-[1rem] group rounded-2xl shadow-2xs font-medium transition-colors duration-200 ease-in-out cursor-pointer flex gap-1 items-center"
-            >
-              <svg
-                class="w-5 h-5 fill-blue-100 transition-colors ease-in-out duration-200"
-                xmlns="http://www.w3.org/2000/svg"
-                height="18"
-                viewBox="0 -960 960 960"
-                width="18"
+              <img
+                draggable="false"
+                src="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
+                class="w-8 lg:w-12 transition-transform duration-500 hover:rotate-360"
+              />
+              <span
+                class="text-neutral-200 font-round text-2xl font-medium lg:text-3xl"
+                >quiverx</span
               >
-                <path
-                  d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"
-                />
-              </svg>
-              <p>Copy Email</p>
+            </a>
+          </div>
+          <div class="gap-x-7 flex lg:gap-x-10 items-center">
+            <div class="hidden md:flex gap-x-7 lg:gap-x-10">
+              <a
+                href="#our-work"
+                class="text-normal-200 text-neutral-300 font-light text-[.9rem] text-sm tracking-wide"
+                >Our Work</a
+              >
+              <a
+                href="#about-us"
+                class="text-normal-200 text-neutral-300 font-light text-[.9rem] text-sm tracking-wide"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="text-normal-200 text-neutral-300 font-light text-[.9rem] text-sm tracking-wide"
+                >Services</a
+              >
+            </div>
+            <button
+              class="glow-button drop-shadow-lg drop-shadow-blue-600/80 px-4 py-2 text-sm lg:px-5 lg:py-2.5 get-in-touch-btn"
+            >
+              Contact
             </button>
           </div>
-          <div class="flex items-center flex-col mt-3 gap-3 lg:items-start">
+        </nav>
+
+        <div
+          class="px-6 flex justify-between text-center gap-8 items-center lg:text-left flex-col-reverse lg:flex-row"
+        >
+          <div
+            class="flex flex-col items-center lg:items-start gap-8 xl:gap-10"
+          >
+            <div class="flex flex-col items-center mt-10 lg:items-start gap-5">
+              <h1
+                class="text-balance max-w-2xl text-[clamp(1.9rem,5vw,3rem)] md:text-[clamp(2rem,4.5vw,4.5rem)] font-normal leading-[1.2] text-neutral-200"
+              >
+                Transforming Ideas Into Stunning Visual
+                <span class="text-blue-600">Experiences</span>
+              </h1>
+              <p
+                class="text-balance max-w-xl text-[clamp(.8rem,2vw,1rem)] xl:text-[1.1rem] text-neutral-300 font-extralight tracking-wide leading-6 lg:leading-8"
+              >
+                We create intuitive designs, innovative products, and seamless
+                digital experiences through reliable web solutions.
+              </p>
+            </div>
+            <div class="flex gap-x-3 items-center">
+              <button
+                class="get-in-touch-btn text-[.8rem] px-5 py-2.5 md:text-[1rem] md:px-6 md:py-3 xl:px-8 xl:py-4 glow-button drop-shadow-lg drop-shadow-blue-600/80"
+              >
+                Get In Touch
+              </button>
+              <button
+                id="copy-email-btn"
+                class="text-neutral-300 font-normal text-[.8rem] md:text-[1rem] bg-none group shadow-2xs hover:text-neutral-400 transition-colors duration-200 ease-in-out cursor-pointer flex gap-1 items-center"
+              >
+                <svg
+                  class="w-5 h-5 fill-neutral-200 group-hover:fill-neutral-400 transition-colors ease-in-out duration-200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  viewBox="0 -960 960 960"
+                  width="18"
+                >
+                  <path
+                    d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"
+                  />
+                </svg>
+                <p>Copy Email</p>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <img
+              draggable="false"
+              src="images/Image_fx.png"
+              class="w-[400px] md:w-[450px] lg:w-[750px]"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex mt-[40px] pb-7 self-center justify-end gap-[20px] flex-col lg:items-start"
+        >
+          <div class="flex flex-col gap-[20px] items-center">
             <p
-              class="text-[.7rem] md:text-[.8rem] xl:text-[.8rem] text-blue-100 opacity-50"
+              class="text-balance max-w-xl text-[clamp(.8rem,2vw,1rem)] text-neutral-300 font-light"
             >
-              Trusted by leading brands
+              Trusted By Leading Brands
             </p>
-            <div class="flex items-center gap-4">
-              <img
-                src="images/rebel bear.png"
-                class="w-[3rem] md:w-[3.5rem] xl:w-[5rem] opacity-60"
-              />
-              <img
-                src="images/digital reality.png"
-                class="w-[6.5rem] md:w-[7rem] xl:w-[10rem] opacity-60"
-              />
-              <img
-                src="images/berry.png"
-                class="w-[4.5rem] md:w-[5rem] xl:w-[6rem] opacity-60"
-              />
+            <div class="brands max-w-[400px] m-auto">
+              <div class="brands-inner flex">
+                <div
+                  class="brands-group flex items-center gap-[20px] sm:gap-[30px]"
+                >
+                  <img
+                    src="images/rebel bear-dark.png"
+                    class="w-[3rem] md:w-[3.5rem] xl:w-[5rem] opacity-60"
+                  />
+                  <img
+                    src="images/digital reality -dark.png"
+                    class="w-[6.5rem] md:w-[7rem] xl:w-[10rem] opacity-60"
+                  />
+                  <img
+                    src="images/berry-dark.png"
+                    class="w-[4.5rem] md:w-[5rem] xl:w-[6rem] opacity-60"
+                  />
+                  <img
+                    src="images/errandbro logo.png"
+                    class="w-[4.5rem] md:w-[5rem] xl:w-[6rem] opacity-60"
+                  />
+                  <img
+                    src="images/rebel bear-dark.png"
+                    class="w-[3rem] md:w-[3.5rem] xl:w-[5rem] opacity-60"
+                  />
+                  <img
+                    src="images/digital reality -dark.png"
+                    class="w-[6.5rem] md:w-[7rem] xl:w-[10rem] opacity-60"
+                  />
+                  <img
+                    src="images/berry-dark.png"
+                    class="w-[4.5rem] md:w-[5rem] xl:w-[6rem] opacity-60"
+                  />
+                  <img
+                    src="images/errandbro logo.png"
+                    class="w-[4.5rem] md:w-[5rem] xl:w-[6rem] opacity-60"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div><img src="images/Image_fx.png" class="w-full block h-auto" /></div>
       </section>
+    </header>
 
-      <section
-        id="services"
-        class="max-w-[1640px] px-1 pt-12 sm:pt-16 md:pt-24 lg:pt-32 m-auto"
-      >
-        <div class="flex flex-col px-5 justify-center gap-15">
-          <div class="flex flex-col items-center gap-5 text-center">
+    <main class="pt-30 flex flex-col gap-30">
+      <section id="services" class="max-w-[1640px] px-1 m-auto">
+        <div class="flex flex-col px-5 gap-15">
+          <div
+            class="flex flex-col items-center lg:items-start lg:text-left gap-[20px] text-center"
+          >
             <h2
-              class="max-w-2xl text-[clamp(1.5rem,7vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="max-w-2xl text-balance text-[clamp(1.5rem,3vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-normal leading-[1.2] text-neutral-200 tracking-wide"
             >
-              Our Creative Expertise
+              What we do
             </h2>
             <p
-              class="max-w-prose text-[clamp(.7rem,3vw,1rem)] sm:text-[.8rem] 2xl:text-[1rem] tracking-normal text-blue-100 opacity-80 font-light"
+              class="text-balance max-w-xl text-sm text-neutral-300 font-extralight leading-6 tracking-wide"
             >
               We offer comprehensive creative solutions to help your business
               stand out in the digital landscape
             </p>
           </div>
-          <div class="blue-underline flex self-center"></div>
+          <div class="blue-underline flex self-center lg:self-start"></div>
           <div
-            class="grid grid-cols-[repeat(auto-fit,_minmax(270px,_1fr))] justify-center gap-6"
+            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-center gap-6"
           >
             <div class="grid-services">
               <img
                 src="images/code_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg"
-                class="bg-[var(--dark-blue-3)] p-3 w-[3.5em] rounded-full"
+                class="bg-gray-800 p-3 w-[3.5em] rounded-full"
               />
-              <h3 class="h3-services text-[1.5rem]">Development</h3>
+              <h3
+                class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide"
+              >
+                Development
+              </h3>
               <p
-                class="p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.9rem]"
+                class="text-balance max-w-2xl text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem]"
               >
                 Our development team builds robust, scalable solutions that
                 bring your digital visions to life with clean code.
@@ -188,63 +232,84 @@
             <div class="grid-services">
               <img
                 src="images/aq_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg"
-                class="bg-[var(--dark-blue-3)] p-3 w-[3.5em] rounded-full"
+                class="bg-gray-800 p-3 w-[3.5em] rounded-full"
               />
-              <h3 class="h3-services text-[1.5rem]">Branding</h3>
-              <p
-                class="p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.9rem]"
+              <h3
+                class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
               >
-                We craft distinctive brand identities that resonate with your
+                Branding
+              </h3>
+              <p
+                class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.8rem]"
+              >
+                We create distinctive brand identities that resonate with your
                 audience and set you apart from competitors.
               </p>
             </div>
 
-            <div class="grid-services sm:col-span-2 lg:col-auto">
+            <div class="grid-services">
               <img
                 src="images/stylus_fountain_pen_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg"
-                class="bg-[var(--dark-blue-3)] p-3 w-[3.5em] rounded-full"
+                class="bg-gray-800 p-3 w-[3.5em] rounded-full"
               />
-              <h3 class="h3-services text-[1.5rem]">Graphic Design</h3>
+              <h3
+                class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+              >
+                Graphic Design
+              </h3>
               <p
-                class="p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.9rem]"
+                class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.8rem]"
               >
                 We create visually stunning graphics that communicate your
                 message effectively and leave a lasting impression.
+              </p>
+            </div>
+
+            <div class="grid-services">
+              <img
+                src="images/uicon-dark.png"
+                class="bg-gray-800 p-3 w-[3.5em] rounded-full"
+              />
+              <h3
+                class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+              >
+                UI/UX Design
+              </h3>
+              <p
+                class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide p-services text-[.7rem] lg:text-[.8rem] 2xl:text-[.8rem]"
+              >
+                We create seamless user experiences that balance aesthetics and
+                functionality.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="our-work"
-        class="max-w-[1640px] px-5 pt-12 sm:pt-16 md:pt-24 lg:pt-32 m-auto"
-      >
-        <div class="flex items-center justify-center flex-col gap-y-10">
-          <div class="flex flex-col gap-y-7 items-center">
+      <section id="our-work" class="max-w-[1640px] px-1 m-auto">
+        <div class="flex flex-col px-5 gap-15">
+          <div class="flex flex-col gap-y-[20px] items-center">
             <h2
-              class="max-w-2xl text-[clamp(1.5rem,7vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="max-w-2xl text-balance text-[clamp(1.5rem,3vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-normal leading-[1.2] text-neutral-200 tracking-wide"
             >
               Our Recent Works
             </h2>
-            <div class="flex justify-center">
-              <div
-                class="inline-flex bg-[var(--dark-blue-1)] gap-2 rounded-2xl p-1"
-              >
+            <div class="flex items-center">
+              <div class="inline-flex bg-gray-900 gap-2 rounded-4xl p-2">
                 <button
-                  class="filter-btn active px-4 py-2 text-[.8rem] rounded-xl bg-primary text-white"
+                  class="filter-btn active px-4 py-2 leading-6 font-light tracking-wide text-[.7rem] lg:text-[.8rem] rounded-3xl text-neutral-200"
                   data-filter="graphics"
                 >
                   Graphics
                 </button>
                 <button
-                  class="filter-btn px-4 py-2 text-[.8rem] rounded-xl text-white"
+                  class="filter-btn px-4 py-2 leading-6 font-light tracking-wide text-[.7rem] lg:text-[.8rem] rounded-3xl text-neutral-200"
                   data-filter="branding"
                 >
                   Branding
                 </button>
                 <button
-                  class="filter-btn px-4 py-2 text-[.8rem] rounded-xl text-white"
+                  class="filter-btn px-4 py-2 leading-6 font-light tracking-wide text-[.7rem] lg:text-[.8rem] rounded-3xl text-neutral-200"
                   data-filter="development"
                 >
                   Development
@@ -258,32 +323,32 @@
             data-category="graphics"
           >
             <!-- Card 1 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0070.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  PAIGE
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
-                  PAIGE DESIGN
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
+                  Paige Deisgn
                 </h3>
-                <p class="text-blue-100 text-[.8rem] opacity-70 text-sm mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Visual identity for Paige Africa Design, merging clean
                   aesthetics with African-inspired elements to reflect modern
                   cultural elegance.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -291,7 +356,7 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-behance-line text-blue-100"
                         ><img src="images/behance.png" class="w-4"
@@ -303,31 +368,31 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0102.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  FIRE DOWN
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Fire Down Design
                 </h3>
-                <p class="text-blue-100 text-[.8rem] opacity-70 text-sm mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   A clean, catchy design that captures forward momentum, using
                   calm tones accented by subtle sparks of excitement and energy.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -335,9 +400,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -347,32 +412,32 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/Danny thrift-1.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  DANNY SELLS
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Thrift Shirt Flyer Design
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Flyer design for white thrift shirts, combining soft tones and
                   bold contrast to emphasize simplicity, style, and
                   affordability.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -380,9 +445,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -392,32 +457,32 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0100.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
-                >
-                  REBEL BEAR
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Rebel Bear Design
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Bold flyer design for Rebel Bear, blending gritty textures and
                   sharp typography to reflect the brand’s fierce, independent
                   spirit.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -425,9 +490,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -438,35 +503,35 @@
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-1 gap-6 portfolio-div hide-card"
+            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-center gap-6 portfolio-div hide-card"
             data-category="branding"
           >
             <!-- Card 1 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0089.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  BERRY
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Berry Brand Identity
                 </h3>
-                <p class="text-blue-100 text-[.8rem] opacity-70 mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Brand identity for Berry Web3 — fun, future-ready, and crafted
                   to resonate with the bold, digital-native generation.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -474,9 +539,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -486,31 +551,31 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0080.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  REBEL BEAR
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Rebel Bear
                 </h3>
-                <p class="text-blue-100 text-[.8rem] opacity-70 mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Rebel Bear’s bold branding defies convention, appealing to
                   individuals who walk their own path with power and style.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -518,9 +583,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -530,31 +595,31 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0091.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  FWO-PLAY
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   FWD Play Brand identity
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   FWD Play uses bold visuals and trend-driven design to
                   represent a platform streaming what’s current and coming next.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -562,7 +627,7 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-behance-line text-blue-100"
                         ><img src="images/behance.png" class="w-4"
@@ -574,31 +639,31 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/IMG-20250523-WA0087.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
-                >
-                  QAWO
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   QAWO Brand Identity
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   QAWO’s identity reflects a fintech brand built on clarity and
                   innovation, inspiring digital confidence, trust, and fluency.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -606,9 +671,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -623,32 +688,32 @@
             data-category="development"
           >
             <!-- Card 1 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/Revolut.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  REVOLUT
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Revolut Landing Page
                 </h3>
-                <p class="text-blue-100 opacity-70 text-[.8rem] mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Revolut’s landing page blends minimalist tech design with
                   financial confidence, offering a seamless, modern, borderless
                   banking experience.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -656,9 +721,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -668,32 +733,32 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/Makua.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  MAKUA
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Makua Ubanagu
                 </h3>
-                <p class="text-blue-100 opacity-70 text-[.8rem] mb-4">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Makua’s portfolio website showcases thoughtful design and
                   personal branding through a clean, curated, and visually clear
                   experience.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -701,9 +766,9 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
-                      <i class="ri-behance-line text-blue-100"
+                      <i class="ri-behance-line text-neutral-200"
                         ><img src="images/behance.png" class="w-4"
                       /></i>
                     </a>
@@ -713,32 +778,32 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/Anambra Tech.jpg"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full"
-                >
-                  ANAMBRA TECH
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Anambra Tech Website
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Explore infrastructure progress across Anambra’s LGAs and stay
                   informed with updates on ongoing local government
                   developments.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -746,7 +811,7 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-behance-line text-blue-100"
                         ><img src="images/behance.png" class="w-4"
@@ -758,31 +823,31 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="portfolio-card rounded-xl overflow-hidden">
+            <div class="portfolio-card rounded-4xl overflow-y-hidden">
               <div class="relative">
                 <img
                   src="images/Weather-whirl.png"
                   class="w-full h-64 object-cover object-top"
+                  draggable="false"
                 />
-                <div
-                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
-                >
-                  WEATHER WHIRL
-                </div>
               </div>
               <div class="p-5">
-                <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <h3
+                  class="h3-services max-w-2xl text-balance text-xl lg:text-2xl font-normal leading-[1.2] text-neutral-200 tracking-wide mb-2"
+                >
                   Weather Whirl App
                 </h3>
-                <p class="text-gray-300 text-[.8rem] mb-4 opacity-70">
+                <p
+                  class="text-balance text-neutral-300 leading-6 font-extralight tracking-wide text-[.7rem] lg:text-[.8rem] mb-4"
+                >
                   Stay ahead of changing weather using real-time forecasts,
                   intuitive visuals, clean design, and a smooth user experience.
                 </p>
                 <div class="flex items-center">
-                  <div class="flex space-x-3">
+                  <div class="flex gap-3">
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-instagram-line text-"
                         ><img src="images/instagram.png" class="w-4"
@@ -790,7 +855,7 @@
                     </a>
                     <a
                       href="#"
-                      class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                      class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                     >
                       <i class="ri-behance-line text-blue-100"
                         ><img src="images/behance.png" class="w-4"
@@ -802,7 +867,7 @@
             </div>
           </div>
           <button
-            class="glow-button drop-shadow-lg drop-shadow-blue-600/80 px-4 py-2 text-[.8rem] lg:px-5 lg:py-2.5 lg:text-[1rem] lg:rounded-xl flex items-center gap-2"
+            class="get-in-touch-btn text-[.8rem] px-5 py-2.5 md:text-[1rem] md:px-6 md:py-3 xl:px-8 xl:py-4 flex items-center self-center gap-2 glow-button drop-shadow-lg drop-shadow-blue-600/80"
           >
             Explore Projects
             <svg
@@ -823,340 +888,170 @@
         </div>
       </section>
 
-      <section
-        id="skills"
-        class="max-w-[1640px] px-5 pt-12 sm:pt-16 md:pt-24 lg:pt-32 m-auto"
-      >
-        <div class="flex items-center justify-center flex-col gap-y-15">
-          <div class="flex flex-col items-center gap-2 text-center">
+      <section id="skills" class="max-w-[1640px] w-full px-1 m-auto">
+        <div class="flex flex-col px-5 gap-15">
+          <div
+            class="flex flex-col items-center lg:items-start lg:text-left gap-[20px] text-center"
+          >
             <h2
-              class="max-w-2xl text-[clamp(1.5rem,7vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="max-w-2xl text-balance text-[clamp(1.5rem,3vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-normal leading-[1.2] text-neutral-200 tracking-wide"
             >
               Our Skills
             </h2>
             <p
-              class="max-w-prose text-[clamp(.7rem,3vw,1rem)] sm:text-[.8rem] 2xl:text-[1rem] tracking-normal text-blue-100 opacity-80 font-light"
+              class="text-balance max-w-2xl text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem]"
             >
               With the right tools in hand, we craft visuals that are <br />
               clear, consistent, and built to make an impact.
             </p>
           </div>
-          <div class="blue-underline flex self-center"></div>
+          <div class="blue-underline flex self-center lg:self-start"></div>
 
-          <div class="w-full grid gap-6 px-1 grid-cols-2 sm:grid-cols-4">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-1 gap-6"
+          >
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="80"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="90"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/figma.683x1024.png" class="w-[2rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium">Figma</p>
+              <p class="text-gray-300 text-md font-light">Figma</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="90"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="92"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/adobe-photoshop.png" class="w-[3rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.6rem]">
-                Photoshop
-              </p>
+              <p class="text-gray-300 text-md font-light">Photoshop</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="92"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="90"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/adobe-illustrator.png" class="w-[2.5rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.6rem]">
-                Illustrator
-              </p>
+              <p class="text-gray-300 text-md font-light">Illustrator</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="85"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="87"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="85"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/react.png" class="w-[3.1rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.2rem]">
-                React
-              </p>
+              <p class="text-gray-300 text-md font-light">React</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="87"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="85"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/framer.684x1024.png" class="w-[2rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.02rem]">
-                Framer
-              </p>
+              <p class="text-gray-300 text-md font-light">Framer</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="93"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="95"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/css3.png" class="w-[2.5rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.15rem]">
-                CSS
-              </p>
+              <p class="text-gray-300 text-md font-light">CSS</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="95"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="95"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/html5.png" class="w-[2.5rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.15rem]">
-                HTML
-              </p>
+              <p class="text-gray-300 text-md font-light">HTML</p>
             </div>
             <div class="skill-grid">
-              <div class="roundnimation-outer">
-                <div class="roundnimation-inner">
-                  <p
-                    class="text-blue-100 text-[.8rem] font-medium number"
-                    data-target="82"
-                  >
-                    0%
-                  </p>
+              <div class="progress-bar">
+                <div class="bar">
+                  <div class="progress" data-progress="92"></div>
                 </div>
+                <p
+                  class="text-neutral-200 text-md font-light number"
+                  data-target="82"
+                >
+                  0%
+                </p>
               </div>
-              <svg
-                class="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="60px"
-                height="60px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#DA22FF" />
-                    <stop offset="100%" stop-color="#973EEE" />
-                  </linearGradient>
-                </defs>
-                <circle
-                  class="progress-circle"
-                  cx="30"
-                  cy="30"
-                  r="24"
-                  stroke-linecap="round"
-                />
-              </svg>
+
               <img src="images/node-js-js.png" class="w-[2.5rem]" />
-              <p class="text-blue-700 text-[1rem] font-medium mt-[.15rem]">
-                NodeJS
-              </p>
+              <p class="text-gray-300 text-md font-light">NodeJS</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="about-us"
-        class="max-w-[1640px] px-5 pt-12 sm:pt-16 md:pt-24 lg:pt-32 m-auto"
-      >
-        <div class="flex flex-col gap-y-15">
-          <div
-            class="flex flex-col justify-center items-center gap-2 text-center"
-          >
+      <section id="about-us" class="w-full max-w-[1640px] px-1 m-auto">
+        <div class="flex flex-col px-5 gap-15">
+          <div class="flex flex-col items-center gap-[20px] text-center">
             <h2
-              class="max-w-2xl text-[clamp(1.5rem,7vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="max-w-2xl text-balance text-[clamp(1.5rem,3vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-normal leading-[1.2] text-neutral-200 tracking-wide"
             >
               About Us
             </h2>
             <p
-              class="max-w-prose text-[clamp(.7rem,3vw,1rem)] sm:text-[.8rem] 2xl:text-[1rem] tracking-normal text-blue-100 opacity-80 font-light"
+              class="text-balance max-w-2xl text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem]"
             >
               Crafting digital experiences that inspire and elevate
             </p>
@@ -1165,17 +1060,16 @@
 
           <div class="flex flex-col">
             <div
-              class="flex gap-x-10 gap-y-5 items-center flex-col md:flex-row justify-center"
+              class="flex gap-x-10 gap-y-5 items-center flex-col lg:flex-row lg:justify-between"
             >
-              <div class="flex flex-col items-start gap-10">
+              <div class="flex flex-col items-center lg:items-start gap-[20px]">
                 <h3
-                  class="max-w-2xl text-[1.2rem] sm:text-[1.5rem] md:text-[1.7rem] xl:text-[2rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+                  class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl lg:text-3xl font-normal leading-6 text-neutral-200 tracking-wide"
                 >
                   Our Story
                 </h3>
-                <div class="blue-underline"></div>
                 <p
-                  class="max-w-prose text-[.7rem] sm:text-[.8rem] 2xl:text-[.9rem] leading-[1.5] tracking-normal text-blue-100 opacity-80 font-light"
+                  class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem]"
                 >
                   Founded in 2022, Quiver is a multidisciplinary design
                   collective focused on product design, branding, and
@@ -1187,7 +1081,7 @@
               </div>
               <div>
                 <img
-                  src="images/Flux_Dev_A_dimly_lit_intimate_workspace_is_illuminated_by_a_so_2.jpg"
+                  src="images/desktop-right-dark.png"
                   class="w-xl rounded-2xl"
                 />
               </div>
@@ -1196,23 +1090,22 @@
 
           <div class="flex flex-col gap-y-10">
             <div
-              class="flex gap-x-10 gap-y-5 items-center flex-col-reverse md:flex-row justify-center"
+              class="flex gap-x-10 gap-y-5 items-center flex-col-reverse lg:flex-row justify-between"
             >
               <div>
                 <img
-                  src="images/Whisk_be9a13c8ba.jpg"
+                  src="images/desktop-left-dark.png"
                   class="w-xl rounded-2xl"
                 />
               </div>
-              <div class="flex flex-col gap-10">
+              <div class="flex flex-col items-center lg:items-start gap-[20px]">
                 <h3
-                  class="max-w-2xl text-[1.2rem] sm:text-[1.5rem] md:text-[1.7rem] xl:text-[2rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+                  class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl lg:text-3xl font-normal leading-6 text-neutral-200 tracking-wide"
                 >
                   Our Approach
                 </h3>
-                <div class="blue-underline"></div>
                 <p
-                  class="max-w-prose text-[.7rem] sm:text-[.8rem] 2xl:text-[.9rem] leading-[1.5] tracking-normal text-blue-100 opacity-80 font-light"
+                  class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem]"
                 >
                   We design digital experiences rooted in emotion and clarity.
                   Our process merges art and logic, ensuring every interaction
@@ -1227,35 +1120,39 @@
 
           <div class="flex flex-col gap-y-10">
             <h3
-              class="max-w-2xl text-[1.2rem] sm:text-[1.5rem] md:text-[1.7rem] xl:text-[2rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="h3-services max-w-2xl text-center self-start lg:text-left text-balance text-xl sm:text-2xl lg:text-3xl font-normal leading-6 text-neutral-200 tracking-wide"
             >
               Our Team
             </h3>
-            <div class="blue-underline"></div>
             <div
-              class="px-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 portfolio-div"
+              class="px-1 grid grid-cols-2 lg:grid-cols-4 gap-6 portfolio-div"
               data-category="graphics"
             >
               <!-- Card 1 -->
-              <div class="portfolio-card rounded-xl overflow-hidden">
+              <div class="portfolio-card rounded-4xl overflow-y-hidden">
                 <div class="relative">
                   <img
-                    src="images/Whisk_d5bf6fa159.jpg"
+                    src="images/mj.png"
                     class="w-full h-64 object-cover object-top"
+                    draggable="false"
                   />
                 </div>
-                <div class="p-5">
-                  <h3 class="text-lg font-semibold mb-1 text-blue-100">
+                <div class="p-5 flex items-center flex-col">
+                  <h3
+                    class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl mb-3 font-normal leading-6 text-neutral-200 tracking-wide"
+                  >
                     Micah Miracle
                   </h3>
-                  <p class="text-blue-100 font-medium opacity-70 text-sm mb-4">
+                  <p
+                    class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem] mb-4"
+                  >
                     Creative Director
                   </p>
                   <div class="flex items-center">
-                    <div class="flex space-x-3">
+                    <div class="flex gap-3">
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-instagram-line text-"
                           ><img src="images/instagram.png" class="w-4"
@@ -1263,7 +1160,7 @@
                       </a>
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-behance-line text-blue-100"
                           ><img src="images/behance.png" class="w-4"
@@ -1275,25 +1172,30 @@
               </div>
 
               <!-- Card 2 -->
-              <div class="portfolio-card rounded-xl overflow-hidden">
+              <div class="portfolio-card rounded-4xl overflow-y-hidden">
                 <div class="relative">
                   <img
-                    src="images/Whisk_ba5a4137cf.jpg"
+                    src="images/isaac.png"
                     class="w-full h-64 object-cover object-top"
+                    draggable="false"
                   />
                 </div>
-                <div class="p-5">
-                  <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <div class="p-5 flex items-center flex-col">
+                  <h3
+                    class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl mb-3 font-normal leading-6 text-neutral-200 tracking-wide"
+                  >
                     Isaac Dike
                   </h3>
-                  <p class="text-blue-100 opacity-70 font-medium text-sm mb-4">
+                  <p
+                    class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem] mb-4"
+                  >
                     Backend Developer
                   </p>
                   <div class="flex items-center">
-                    <div class="flex space-x-3">
+                    <div class="flex gap-3">
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-instagram-line text-"
                           ><img src="images/instagram.png" class="w-4"
@@ -1301,7 +1203,7 @@
                       </a>
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-behance-line text-blue-100"
                           ><img src="images/behance.png" class="w-4"
@@ -1313,25 +1215,30 @@
               </div>
 
               <!-- Card 3 -->
-              <div class="portfolio-card rounded-xl overflow-hidden">
+              <div class="portfolio-card rounded-4xl overflow-y-hidden">
                 <div class="relative">
                   <img
-                    src="images/Whisk_53c70ffb76.jpg"
+                    src="images/okosa.png"
                     class="w-full h-64 object-cover object-top"
+                    draggable="false"
                   />
                 </div>
-                <div class="p-5">
-                  <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <div class="p-5 flex items-center flex-col">
+                  <h3
+                    class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl mb-3 font-normal leading-6 text-neutral-200 tracking-wide"
+                  >
                     Joshua Okosa
                   </h3>
-                  <p class="text-gray-300 font-medium text-sm mb-4 opacity-70">
+                  <p
+                    class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem] mb-4"
+                  >
                     Frontend Engineer
                   </p>
                   <div class="flex items-center">
-                    <div class="flex space-x-3">
+                    <div class="flex gap-3">
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-instagram-line text-"
                           ><img src="images/instagram.png" class="w-4"
@@ -1339,7 +1246,7 @@
                       </a>
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-behance-line text-blue-100"
                           ><img src="images/behance.png" class="w-4"
@@ -1351,25 +1258,30 @@
               </div>
 
               <!-- Card 4 -->
-              <div class="portfolio-card rounded-xl overflow-hidden">
+              <div class="portfolio-card rounded-4xl overflow-y-hidden">
                 <div class="relative">
                   <img
-                    src="images/Whisk_d72cc75b80.jpg"
+                    src="images/david.png"
                     class="w-full h-64 object-cover object-top"
+                    draggable="false"
                   />
                 </div>
-                <div class="p-5">
-                  <h3 class="text-lg font-semibold mb-2 text-blue-100">
+                <div class="p-5 flex items-center flex-col">
+                  <h3
+                    class="h3-services max-w-2xl text-center lg:text-left text-balance text-xl sm:text-2xl mb-3 font-normal leading-6 text-neutral-200 tracking-wide"
+                  >
                     David Williams
                   </h3>
-                  <p class="text-gray-300 font-medium text-sm mb-4 opacity-70">
+                  <p
+                    class="text-balance max-w-2xl text-center lg:text-left text-neutral-300 leading-7 font-extralight tracking-wide text-[.7rem] lg:text-[.9rem] mb-4"
+                  >
                     Product Strategist
                   </p>
                   <div class="flex items-center">
-                    <div class="flex space-x-3">
+                    <div class="flex gap-3">
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-instagram-line text-"
                           ><img src="images/instagram.png" class="w-4"
@@ -1377,7 +1289,7 @@
                       </a>
                       <a
                         href="#"
-                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800"
                       >
                         <i class="ri-behance-line text-blue-100"
                           ><img src="images/behance.png" class="w-4"
@@ -1392,151 +1304,114 @@
         </div>
       </section>
 
-      <section
-        id="contact"
-        class="max-w-[1640px] px-5 pt-12 sm:pt-16 md:pt-24 lg:pt-32 m-auto"
-      >
-        <div class="flex flex-col gap-y-15">
-          <div
-            class="flex flex-col justify-center items-center gap-y-2 text-center"
-          >
+      <section id="contact" class="max-w-[1640px] px-6 mx-auto w-full">
+        <div
+          class="flex flex-col items-center text-center gap-15 bg-gray-900 p-20 rounded-3xl"
+        >
+          <div class="flex flex-col items-center gap-10">
             <h2
-              class="max-w-2xl text-[clamp(1.5rem,7vw,2rem)] sm:text-[2rem] md:text-[2.2rem] lg:text-[2rem] xl:text-[2.2rem] 2xl:text-[2.5rem] font-bold leading-[1.2] tracking-tight text-blue-700"
+              class="text-balance max-w-2xl text-3xl font-normal leading-10 md:text-4xl md:leading-15 text-neutral-200"
             >
-              Contact Us
+              Ready to bring your ideas to life? <br />
+              We are too.
             </h2>
-            <p
-              class="max-w-prose text-[clamp(.7rem,3vw,1rem)] sm:text-[.8rem] 2xl:text-[1rem] tracking-normal text-blue-100 opacity-80 font-light"
+            <a
+              href="#"
+              class="flex items-center text-md md:text-xl font-normal group text-blue-600"
             >
-              Let's turn your vision into reality
-            </p>
-          </div>
-          <div class="blue-underline flex self-center"></div>
-          <div class="flex justify-center gap-50 items-center">
-            <form
-              action="https://formsubmit.co/quivercreatives@gmail.com"
-              method="POST"
-              id="contact-form"
-              class="flex flex-col items-center"
-              novalidate
-            >
-              <!-- Name Field -->
-              <label
-                for="name"
-                class="text-[.9rem] text-blue-100 opacity-70 mb-2 self-start"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Enter your name"
-                class="bg-[var(--dark-blue-3)] text-[.8rem] focus:outline-none text-blue-100 opacity-70 focus:ring-0 border-none w-[300px] sm:w-[400px] 2xl:w-[500px] h-10 py-3 px-3 rounded-xl"
+              Connect with us
+              <img
+                src="images/blue_right_arrow.png"
+                alt=""
+                class="ml-2 w-5 md:w-8 group-hover:ml-5 transition-all duration-500 ease-in-out"
               />
-              <span class="name-auth">Name required</span>
-
-              <!-- Email Field -->
-              <label
-                for="email"
-                class="text-[.9rem] text-blue-100 opacity-70 mt-7 mb-2 self-start"
-              >
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                class="bg-[var(--dark-blue-3)] focus:outline-none text-[.8rem] text-blue-100 opacity-70 focus:ring-0 border-none w-[300px] sm:w-[400px] 2xl:w-[500px] h-10 py-3 px-3 rounded-xl"
-              />
-              <span class="email-auth">Email required</span>
-              <span class="email-alert">Enter a valid email address</span>
-
-              <!-- Message Field -->
-              <label
-                for="message"
-                class="text-[.9rem] text-blue-100 opacity-70 mt-7 mb-2 self-start"
-              >
-                Your Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                placeholder="Write a message"
-                class="bg-[var(--dark-blue-3)] focus:outline-none text-[.8rem] focus:ring-0 border-none text-blue-100 opacity-70 w-[300px] sm:w-[400px] 2xl:w-[500px] h-30 py-3 px-3 rounded-xl resize-none overflow-hidden"
-              ></textarea>
-              <span class="message-auth">Message required</span>
-
-              <!-- Disable Captcha (optional) -->
-              <input type="hidden" name="_captcha" value="false" />
-
-              <!-- Redirect after successful submission (optional) -->
-              <input
-                type="hidden"
-                name="_next"
-                value="https://yourwebsite.com/thank-you.html"
-              />
-
-              <!-- Submit Button -->
-              <button
-                type="submit"
-                class="glow-button drop-shadow-lg drop-shadow-blue-600/80 px-4 py-2 text-[.8rem] lg:px-5 lg:py-2.5 lg:text-[1rem] lg:rounded-xl mt-7"
-              >
-                Send Message
-              </button>
-            </form>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer
-      class="max-w-[1640px] px-5 pb-8 pt-16 sm:pt-18 md:pt-26 lg:pt-34 m-auto"
-    >
-      <div class="flex justify-between items-center">
-        <div class="flex items-center gap-x-2">
-          <img
-            src="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
-            class="w-8 md:w-10 transition-transform duration-500 hover:rotate-360"
-          />
-          <span class="text-blue-100 text-[1rem] md:text-[1.3rem] font-semibold"
-            >QuiverX</span
+    <footer class="pt-30 pb-10 flex items-center flex-col">
+      <div
+        class="max-w-[1640px] flex items-center justify-between w-full px-6 m-auto"
+      >
+        <div>
+          <a
+            draggable="false"
+            href="https://quiverx.vercel.app/"
+            class="flex items-center gap-x-2 xl:gap-x-3 cursor-pointer"
           >
+            <img
+              draggable="false"
+              src="images/WhatsApp_Image_2025-05-16_at_07.37.34_95c5cb25-removebg-preview.png"
+              class="w-8 lg:w-12 transition-transform duration-500 hover:rotate-360"
+            />
+            <span
+              class="text-neutral-200 font-round text-2xl font-medium lg:text-3xl"
+              >quiverx</span
+            >
+          </a>
         </div>
-        <div class="flex items-center gap-x-3 md:gap-x-5 lg:gap-x-7">
+
+        <form
+          id="subscribe-form"
+          action="https://formsubmit.co/quivercreatives@gmail.com"
+          method="POST"
+          novalidate
+          class="lg:flex lg:flex-row hidden items-center justify-between w-[441px] bg-gray-900 rounded-4xl pl-5 pr-2 py-2"
+        >
+          <input
+            type="email"
+            id="subscriber-email"
+            name="email"
+            placeholder="example@gmail.com"
+            autocomplete="off"
+            class="flex-1 bg-transparent border-none outline-none text-[1rem] font-light text-neutral-200 placeholder-neutral-400"
+          />
+          <button
+            type="submit"
+            class="px-4 py-2 text-md font-light text-neutral-200 bg-blue-700 hover:bg-blue-800 rounded-3xl cursor-pointer transition-colors duration-300 ease-in-out"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        
+
+        <div class="flex items-center gap-5">
           <a
             href="#"
-            class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+            class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-gray-800"
           >
-            <i class="ri-instagram-line text-"
-              ><img src="images/instagram.png" class="w-2.5 sm:w-3 md:w-4"
+            <i class="ri-instagram-line"
+              ><img src="images/instagram.png" class="w-4 lg:w-5"
             /></i>
           </a>
           <a
             href="#"
-            class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+            class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-gray-800"
           >
-            <i class="ri-instagram-line text-"
-              ><img src="images/behance.png" class="w-2.5 sm:w-3 md:w-4"
+            <i class="ri-instagram-line"
+              ><img src="images/behance.png" class="w-4 lg:w-5"
             /></i>
           </a>
           <a
             href="#"
-            class="w-8 h-8 flex items-center justify-center rounded-full bg-[var(--dark-blue-3)]"
+            class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-gray-800"
           >
-            <i class="ri-instagram-line text-"
-              ><img src="images/icons8-x-logo.svg" class="w-2.5 sm:w-3 md:w-4"
+            <i class="ri-instagram-line"
+              ><img src="images/icons8-x-logo.svg" class="w-4 lg:w-5"
             /></i>
           </a>
         </div>
       </div>
+
+      <p id="subscribe-error" class="hidden text-red-200 text-sm font-extralight mt-2"></p>
+
       <div class="flex justify-center">
-        <p class="text-[.8rem] text-blue-100 opacity-60 mt-10 tracking-normal">
+        <p
+          class="text-[.8rem] font-extralight text-neutral-300 mt-10 tracking-wide"
+        >
           © 2025 Quiver. All rights reserved.
         </p>
       </div>
