@@ -66,7 +66,8 @@
   }
 
   @media (min-width: 1440px) {
-    .portfolio-card:hover, .grid-services:hover {
+    .portfolio-card:hover,
+    .grid-services:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 30px var(--color-blue-900);
     }
@@ -91,38 +92,41 @@
   }
 
   .brands {
-  overflow: hidden;
-  width: 100%;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-}
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
-.brands-inner {
-  width: max-content;
-  animation: marquee 10s linear infinite;
-}
+  .brands-inner {
+    width: max-content;
+    animation: marquee 10s linear infinite;
+  }
 
-.brands-inner img {
-  padding-left: 20px;
-}
-
+  .brands-inner img {
+    padding-left: 20px;
+  }
 
   .skill-grid {
     display: flex;
@@ -257,12 +261,19 @@
   display: inline-block;
   margin-left: 2px;
   color: var(--color-blue-700);
-  animation: blink 0.7s infinite;
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 .scroll-fade {
@@ -275,7 +286,6 @@
   opacity: 1;
   transform: scale(1) translateY(0);
 }
-
 
 body {
   font-family: "Inter", sans-serif;

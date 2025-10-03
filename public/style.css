@@ -1178,7 +1178,7 @@
   display: inline-block;
   margin-left: 2px;
   color: var(--color-blue-700);
-  animation: blink 0.7s infinite;
+  animation: blink 1s infinite;
 }
 @keyframes blink {
   0%, 50%, 100% {
