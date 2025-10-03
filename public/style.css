@@ -253,9 +253,6 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
-  .min-h-dvh {
-    min-height: 100dvh;
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
@@ -304,8 +301,8 @@
   .max-w-\[400px\] {
     max-width: 400px;
   }
-  .max-w-\[1640px\] {
-    max-width: 1640px;
+  .max-w-\[1600px\] {
+    max-width: 1600px;
   }
   .max-w-xl {
     max-width: var(--container-xl);
@@ -494,9 +491,6 @@
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
-  .pb-7 {
-    padding-bottom: calc(var(--spacing) * 7);
-  }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
@@ -604,6 +598,9 @@
     &::placeholder {
       color: var(--color-neutral-400);
     }
+  }
+  .opacity-0 {
+    opacity: 0%;
   }
   .opacity-60 {
     opacity: 60%;
@@ -1163,6 +1160,42 @@
 }
 .slide-in-Up {
   animation: slideInUp 1.3s ease forwards;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in {
+  animation: slideInRight 1.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--color-blue-700);
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.scroll-fade {
+  opacity: 0;
+  transform: scale(0.95) translateY(30px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+.scroll-fade.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 body {
   font-family: "Inter", sans-serif;

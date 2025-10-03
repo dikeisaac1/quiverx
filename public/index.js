@@ -13,6 +13,103 @@ $(document).ready(function () {
       .addClass("slide-in-Up");
   });
 
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-in");
+      entry.target.classList.remove("opacity-0");
+    }
+  });
+});
+
+document.querySelectorAll(".slide-target").forEach((el) => observer.observe(el));
+
+
+function typeEffect(element, parts, speed) {
+  let i = 0;
+  let j = 0;
+  let current = "";
+  let timer = setInterval(() => {
+    const text = parts[i].text;
+    const isSpan = parts[i].span;
+
+    current = text.substring(0, j);
+
+    if (isSpan) {
+      element.html(
+        parts.slice(0, i).map(p => p.span ? `<span class="${p.span}">${p.text}</span>` : p.text).join("") +
+        `<span class="${parts[i].span}">${current}</span>` +
+        '<span class="cursor">|</span>'
+      );
+    } else {
+      element.html(
+        parts.slice(0, i).map(p => p.span ? `<span class="${p.span}">${p.text}</span>` : p.text).join("") +
+        current +
+        '<span class="cursor">|</span>'
+      );
+    }
+
+    j++;
+    if (j > text.length) {
+      j = 0;
+      i++;
+      if (i >= parts.length) {
+        clearInterval(timer);
+        // Final render without cursor
+        element.html(
+          parts.map(p => p.span ? `<span class="${p.span}">${p.text}</span>` : p.text).join("")
+        );
+      }
+    }
+  }, speed);
+}
+
+$(document).ready(function () {
+  const parts = [
+    { text: "Transforming Ideas Into Stunning Visual ", span: null },
+    { text: "Experiences", span: "text-blue-600" }
+  ];
+
+  typeEffect($("#hero-title"), parts, 60);
+});
+
+
+$(function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        $(entry.target).addClass("show");
+        observer.unobserve(entry.target); // run once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  $(".scroll-fade").each(function () {
+    observer.observe(this);
+  });
+});
+
+function typingEffect(element, text, speed) {
+  let i = 0;
+  let timer = setInterval(() => {
+    element.html(text.substring(0, i) + '<span class="cursor">|</span>');
+    i++;
+    if (i > text.length) {
+      clearInterval(timer);
+      element.html(text); // final text without cursor
+    }
+  }, speed);
+}
+
+  const aboutText = "Founded in 2022, Quiver is a multidisciplinary design collective focused on product design, branding, and interactive experiences. We create thoughtful, purpose-driven work that resonates with users, builds meaningful connections, and delivers results with clarity, precision, and emotional impact.";
+
+  typingEffect($("#about-text"), aboutText, 100);
+
+  const aboutText2 = "We design digital experiences rooted in emotion and clarity. Our process merges art and logic, ensuring every interaction is intentional. Before code, we uncover purpose. With minimalism as our lens, we craft interfaces that are fast, meaningful, and beautiful—built to elevate brands and resonate deeply with their audiences.";
+
+  typingEffect($("#about-text2"), aboutText2, 100);
+
+
   function animateSkill($skill) {
     const $number = $skill.find(".number");
     const $bar = $skill.find(".progress");
