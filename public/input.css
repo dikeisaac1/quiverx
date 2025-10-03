@@ -19,7 +19,7 @@
 
 @layer components {
   .font-round {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
   }
 
   .glow-button {
@@ -52,10 +52,6 @@
     background-color: var(--color-gray-900);
     transition: all 0.5s ease-in-out;
   }
-  .portfolio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px var(--color-blue-900);
-  }
 
   .grid-services {
     display: flex;
@@ -69,9 +65,11 @@
     transition: all 0.5s ease-in-out;
   }
 
-  .grid-services:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px var(--color-blue-900);
+  @media (min-width: 1440px) {
+    .portfolio-card:hover, .grid-services:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px var(--color-blue-900);
+    }
   }
 
   .group-work {
@@ -136,15 +134,15 @@
     transition: all 0.5s ease-in-out;
   }
 
-  .skill-grid p, .skill-grid img {
+  .skill-grid p,
+  .skill-grid img {
     align-self: center;
   }
 
-  .skill-grid .progress-bar p{
+  .skill-grid .progress-bar p {
     justify-self: center;
-    padding-top: 1em; 
+    padding-top: 1em;
   }
-
 
   .skill-grid:hover {
     transform: translateY(-5px);
@@ -161,7 +159,6 @@
     color: var(--color-neutral-200);
     max-width: fit-content;
   }
-
 }
 
 .blue-underline {
