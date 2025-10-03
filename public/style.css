@@ -449,8 +449,8 @@
   .object-top {
     object-position: top;
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -476,6 +476,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -488,8 +491,8 @@
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
   }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
+  .pr-1 {
+    padding-right: calc(var(--spacing) * 1);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -697,11 +700,6 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .sm\:gap-\[30px\] {
-    @media (width >= 40rem) {
-      gap: 30px;
     }
   }
   .sm\:text-2xl {
@@ -916,9 +914,9 @@
       line-height: calc(var(--spacing) * 8);
     }
   }
-  .xl\:w-\[5rem\] {
+  .xl\:w-\[4rem\] {
     @media (width >= 80rem) {
-      width: 5rem;
+      width: 4rem;
     }
   }
   .xl\:w-\[6rem\] {
@@ -926,9 +924,9 @@
       width: 6rem;
     }
   }
-  .xl\:w-\[10rem\] {
+  .xl\:w-\[9rem\] {
     @media (width >= 80rem) {
-      width: 10rem;
+      width: 9rem;
     }
   }
   .xl\:grid-cols-4 {
@@ -1051,10 +1049,10 @@
     opacity: 50%;
   }
   .brands {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     -webkit-mask-image: linear-gradient( to right, transparent 0%, black 10%, black 90%, transparent 100% );
-    mask-image: linear-gradient( to right, transparent 0%, black 5%, black 95%, transparent 100% );
+    mask-image: linear-gradient( to right, transparent 0%, black 10%, black 90%, transparent 100% );
   }
   @keyframes marquee {
     0% {
@@ -1066,8 +1064,10 @@
   }
   .brands-inner {
     width: max-content;
-    animation: marquee 5s linear infinite;
-    animation-play-state: running;
+    animation: marquee 10s linear infinite;
+  }
+  .brands-inner img {
+    padding-left: 20px;
   }
   .skill-grid {
     display: flex;
