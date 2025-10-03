@@ -105,26 +105,42 @@ $(document).ready(function () {
   });
 
   function typingEffect(element, text, speed) {
-    let i = 0;
-    let timer = setInterval(() => {
-      element.html(text.substring(0, i) + '<span class="cursor">|</span>');
-      i++;
-      if (i > text.length) {
-        clearInterval(timer);
-        element.html(text); // final text without cursor
-      }
-    }, speed);
-  }
+  let i = 0;
+  let timer = setInterval(() => {
+    element.html(text.substring(0, i) + '<span class="cursor">|</span>');
+    i++;
+    if (i > text.length) {
+      clearInterval(timer);
+      element.html(text); // final text without cursor
+    }
+  }, speed);
+}
 
-  const aboutText =
-    "Founded in 2022, Quiver is a multidisciplinary design collective focused on product design, branding, and interactive experiences. We create thoughtful, purpose-driven work that resonates with users, builds meaningful connections, and delivers results with clarity, precision, and emotional impact.";
+$(function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = $(entry.target);
+          const text = el.data("text"); // 👈 pull text from data attribute
+          typingEffect(el, text, 100);
+          observer.unobserve(entry.target); // run once
+        }
+      });
+    },
+    { threshold: 0.2 } // 👈 only when 20% of element is in viewport
+  );
 
-  typingEffect($("#about-text"), aboutText, 100);
+  // Attach observer to the elements
+  $("#about-text, #about-text2").each(function () {
+    const el = $(this);
+    // store text inside data-text so element is empty before animation
+    el.data("text", el.text());
+    el.text(""); // clear text initially
+    observer.observe(this);
+  });
+});
 
-  const aboutText2 =
-    "We design digital experiences rooted in emotion and clarity. Our process merges art and logic, ensuring every interaction is intentional. Before code, we uncover purpose. With minimalism as our lens, we craft interfaces that are fast, meaningful, and beautiful—built to elevate brands and resonate deeply with their audiences.";
-
-  typingEffect($("#about-text2"), aboutText2, 100);
 
   function animateSkill($skill) {
     const $number = $skill.find(".number");
