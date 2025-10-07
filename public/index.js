@@ -66,7 +66,7 @@ $(document).ready(function () {
         i++;
         if (i >= parts.length) {
           clearInterval(timer);
-          // Final render without cursor
+
           element.html(
             parts
               .map((p) =>
@@ -96,7 +96,7 @@ $(document).ready(function () {
           }
         });
       },
-      { threshold: 0.2}
+      { threshold: 0.2 }
     );
 
     $(".scroll-fade").each(function () {
@@ -105,42 +105,40 @@ $(document).ready(function () {
   });
 
   function typingEffect(element, text, speed) {
-  let i = 0;
-  let timer = setInterval(() => {
-    element.html(text.substring(0, i) + '<span class="cursor">|</span>');
-    i++;
-    if (i > text.length) {
-      clearInterval(timer);
-      element.html(text); // final text without cursor
-    }
-  }, speed);
-}
+    let i = 0;
+    let timer = setInterval(() => {
+      element.html(text.substring(0, i) + '<span class="cursor">|</span>');
+      i++;
+      if (i > text.length) {
+        clearInterval(timer);
+        element.html(text);
+      }
+    }, speed);
+  }
 
-$(function () {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const el = $(entry.target);
-          const text = el.data("text"); // 👈 pull text from data attribute
-          typingEffect(el, text, 100);
-          observer.unobserve(entry.target); // run once
-        }
-      });
-    },
-    { threshold: 0.2 } // 👈 only when 20% of element is in viewport
-  );
+  $(function () {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = $(entry.target);
+            const text = el.data("text");
+            typingEffect(el, text, 100);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-  // Attach observer to the elements
-  $("#about-text, #about-text2").each(function () {
-    const el = $(this);
-    // store text inside data-text so element is empty before animation
-    el.data("text", el.text());
-    el.text(""); // clear text initially
-    observer.observe(this);
+    $("#about-text, #about-text2").each(function () {
+      const el = $(this);
+
+      el.data("text", el.text());
+      el.text("");
+      observer.observe(this);
+    });
   });
-});
-
 
   function animateSkill($skill) {
     const $number = $skill.find(".number");
@@ -212,10 +210,8 @@ $(function () {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const errorMsg = $("#subscribe-error");
 
-    // Reset error
     errorMsg.addClass("hidden").text("");
 
-    // Custom validation
     if (!email) {
       errorMsg.removeClass("hidden").text("Email is required.");
       return;
@@ -226,7 +222,6 @@ $(function () {
       return;
     }
 
-    // If valid, send to FormSubmit
     $.ajax({
       url: "https://formsubmit.co/ajax/quivercreatives@gmail.com",
       method: "POST",

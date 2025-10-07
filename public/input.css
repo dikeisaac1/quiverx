@@ -48,7 +48,6 @@
   }
 
   .portfolio-card {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     background-color: var(--color-gray-900);
     transition: all 0.5s ease-in-out;
   }
@@ -67,7 +66,8 @@
 
   @media (min-width: 1440px) {
     .portfolio-card:hover,
-    .grid-services:hover {
+    .grid-services:hover,
+    .skill-grid:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 30px var(--color-blue-900);
     }
@@ -148,10 +148,6 @@
     padding-top: 1em;
   }
 
-  .skill-grid:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px var(--color-blue-900);
-  }
 
   .h3-services {
     color: var(--color-neutral-200);
@@ -287,7 +283,7 @@
   transform: scale(1) translateY(0);
 }
 
-body {
+* {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
