@@ -139,13 +139,14 @@
   }
 
   .skill-grid p,
-  .skill-grid .progress-bar .bar .progress p,
   .skill-grid img {
     align-self: center;
   }
 
   .skill-grid .progress-bar p {
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+  align-self: center;
     padding-top: 1em;
   }
 
