@@ -474,9 +474,6 @@
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
-  }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
@@ -511,9 +508,6 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .text-\[\.7rem\] {
-    font-size: .7rem;
   }
   .text-\[\.8rem\] {
     font-size: .8rem;
@@ -859,11 +853,6 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
-  .lg\:text-\[\.8rem\] {
-    @media (width >= 64rem) {
-      font-size: .8rem;
-    }
-  }
   .lg\:leading-8 {
     @media (width >= 64rem) {
       --tw-leading: calc(var(--spacing) * 8);
@@ -906,12 +895,6 @@
   font-size: 0.7rem;
   margin-top: 5px;
   display: none;
-}
-:root {
-  --dark-blue-1: #000211;
-  --dark-blue-2: #00031a;
-  --dark-blue-3: #1a2a4a;
-  --dark-blue-4: #01102e;
 }
 @layer components {
   .font-round {
