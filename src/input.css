@@ -10,6 +10,13 @@
   display: none;
 }
 
+:root {
+  --dark-blue-1: #000211;
+  --dark-blue-2: #00031a;
+  --dark-blue-3: #1a2a4a;
+  --dark-blue-4: #01102e;
+}
+
 @layer components {
   .font-round {
     font-family: "Quicksand", sans-serif;

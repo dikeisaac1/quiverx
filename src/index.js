@@ -26,65 +26,6 @@ $(document).ready(function () {
     .querySelectorAll(".slide-target")
     .forEach((el) => observer.observe(el));
 
-  function typeEffect(element, parts, speed) {
-    let i = 0;
-    let j = 0;
-    let current = "";
-    let timer = setInterval(() => {
-      const text = parts[i].text;
-      const isSpan = parts[i].span;
-
-      current = text.substring(0, j);
-
-      if (isSpan) {
-        element.html(
-          parts
-            .slice(0, i)
-            .map((p) =>
-              p.span ? `<span class="${p.span}">${p.text}</span>` : p.text
-            )
-            .join("") +
-            `<span class="${parts[i].span}">${current}</span>` +
-            '<span class="cursor">|</span>'
-        );
-      } else {
-        element.html(
-          parts
-            .slice(0, i)
-            .map((p) =>
-              p.span ? `<span class="${p.span}">${p.text}</span>` : p.text
-            )
-            .join("") +
-            current +
-            '<span class="cursor">|</span>'
-        );
-      }
-
-      j++;
-      if (j > text.length) {
-        j = 0;
-        i++;
-        if (i >= parts.length) {
-          clearInterval(timer);
-
-          element.html(
-            parts
-              .map((p) =>
-                p.span ? `<span class="${p.span}">${p.text}</span>` : p.text
-              )
-              .join("")
-          );
-        }
-      }
-    }, speed);
-  }
-
-  const parts = [
-    { text: "Transforming Ideas Into Stunning Visual ", span: null },
-    { text: "Experiences", span: "text-blue-600" },
-  ];
-
-  typeEffect($("#hero-title"), parts, 100);
 
   $(function () {
     const observer = new IntersectionObserver(
@@ -104,41 +45,6 @@ $(document).ready(function () {
     });
   });
 
-  function typingEffect(element, text, speed) {
-    let i = 0;
-    let timer = setInterval(() => {
-      element.html(text.substring(0, i) + '<span class="cursor">|</span>');
-      i++;
-      if (i > text.length) {
-        clearInterval(timer);
-        element.html(text);
-      }
-    }, speed);
-  }
-
-  $(function () {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const el = $(entry.target);
-            const text = el.data("text");
-            typingEffect(el, text, 100);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    $("#about-text, #about-text2").each(function () {
-      const el = $(this);
-
-      el.data("text", el.text());
-      el.text("");
-      observer.observe(this);
-    });
-  });
 
   function animateSkill($skill) {
     const $number = $skill.find(".number");
